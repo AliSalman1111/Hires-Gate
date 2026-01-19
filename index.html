@@ -55,20 +55,20 @@
     <div class="collapse navbar-collapse text-center mx-auto" id="navbarSupportedContent">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0 m-auto vavbar-linlks">
         <li class="nav-item mx-2">
-          <a class="nav-link  text-black fw-semibold " aria-current="page" href="#">Home</a>
+          <a class="nav-link  text-black fw-semibold    " aria-current="page" href="index.html">Home</a>
         </li>
         <li class="nav-item mx-2">
-          <a class="nav-link text-black fw-semibold" href="about.html">About</a>
+          <a class="nav-link text-black fw-semibold  " href="about.html">About</a>
         </li>
           <li class="nav-item mx-2">
-          <a class="nav-link text-black fw-semibold" href="#">Services
+          <a class="nav-link text-black fw-semibold " href="Services.html">Services
 </a>
         </li>
           <li class="nav-item mx-2">
-          <a class="nav-link text-black fw-semibold" href="#">Careers</a>
+          <a class="nav-link text-black fw-semibold  " href="Careers.html">Careers</a>
         </li>
           <li class="nav-item mx-2">
-          <a class="nav-link text-black fw-semibold" href="#">Contact</a>
+          <a class="nav-link text-black fw-semibold" href="contact.html">Contact</a>
         </li>
      
        
@@ -377,7 +377,7 @@ Professional and executive recruitment for management, technical, and specialize
       
       
       </div>
-      <div class="item2 item"><h2>5000+</h2>
+      <div class="item22 item"><h2>5000+</h2>
       <p>Successful Placements
 </p>
 
@@ -498,7 +498,7 @@ Professional and executive recruitment for management, technical, and specialize
 <div class="div-border"></div>
 
 
-<div class="d-flex justify-content-between">
+<div class="d-flex flex-wrap justify-content-between footer-buton">
   <p class="pp">© 2025 Hires Gate Recruitment Agency. All rights reserved.</p>
 
   <p class="pp">Privacy Policy
@@ -526,10 +526,31 @@ Terms of Service</p>
 
 
 
+<script>
+  const links = document.querySelectorAll('.nav-link');
+  const currentPath = window.location.pathname;
+
+  links.forEach(link => {
+    const href = link.getAttribute('href');
+
+    // تجاهل اللينكات اللي فيها #
+    if (href === "#") return;
+
+    if (currentPath.includes(href)) {
+      link.classList.add('active');
+    } else {
+      link.classList.remove('active');
+    }
+  });
+</script>
 
 
     <!-- ========== Bootstrap JS Link ========== -->
     <script src="./js/bootstrap.bundle.min.js"></script>
+
+
+
+
     <!-- ========== End Bootstrap JS Link ========== -->
   </body>
 </html>
