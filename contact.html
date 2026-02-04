@@ -243,15 +243,20 @@ Terms of Service</p>
   const currentPath = window.location.pathname;
 
   links.forEach(link => {
-    const href = link.getAttribute('href');
+    const href = link.getAttribute("href");
 
-    // تجاهل اللينكات اللي فيها #
-    if (href === "#") return;
+    if (!href || href === "#") return;
 
-    if (currentPath.includes(href)) {
-      link.classList.add('active');
-    } else {
-      link.classList.remove('active');
+    // home
+    if (href === "/" && currentPath === "/") {
+      link.classList.add("active");
+    }
+    // باقي الصفحات
+    else if (href !== "/" && currentPath.startsWith(href)) {
+      link.classList.add("active");
+    }
+    else {
+      link.classList.remove("active");
     }
   });
 </script>

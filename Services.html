@@ -278,23 +278,28 @@ Terms of Service</p>
 
 </footer>
 
-    <script>
-      const links = document.querySelectorAll(".nav-link");
-      const currentPath = window.location.pathname;
+<script>
+  const links = document.querySelectorAll('.nav-link');
+  const currentPath = window.location.pathname;
 
-      links.forEach((link) => {
-        const href = link.getAttribute("href");
+  links.forEach(link => {
+    const href = link.getAttribute("href");
 
-        // تجاهل اللينكات اللي فيها #
-        if (href === "#") return;
+    if (!href || href === "#") return;
 
-        if (currentPath.includes(href)) {
-          link.classList.add("active");
-        } else {
-          link.classList.remove("active");
-        }
-      });
-    </script>
+    // home
+    if (href === "/" && currentPath === "/") {
+      link.classList.add("active");
+    }
+    // باقي الصفحات
+    else if (href !== "/" && currentPath.startsWith(href)) {
+      link.classList.add("active");
+    }
+    else {
+      link.classList.remove("active");
+    }
+  });
+</script>
 
     <!-- ========== Bootstrap JS Link ========== -->
     <script src="./js/bootstrap.bundle.min.js"></script>
