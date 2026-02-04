@@ -55,20 +55,20 @@
     <div class="collapse navbar-collapse text-center mx-auto" id="navbarSupportedContent">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0 m-auto vavbar-linlks">
         <li class="nav-item mx-2">
-          <a class="nav-link  text-black fw-semibold    " aria-current="page" href="index.html">Home</a>
+          <a class="nav-link  text-black fw-semibold    " aria-current="page" href="/index.html">Home</a>
         </li>
         <li class="nav-item mx-2">
-          <a class="nav-link text-black fw-semibold  " href="about.html">About</a>
+          <a class="nav-link text-black fw-semibold  " href="/about.html">About</a>
         </li>
           <li class="nav-item mx-2">
-          <a class="nav-link text-black fw-semibold " href="Services.html">Services
+          <a class="nav-link text-black fw-semibold " href="/Services.html">Services
 </a>
         </li>
           <li class="nav-item mx-2">
-          <a class="nav-link text-black fw-semibold  " href="Careers.html">Careers</a>
+          <a class="nav-link text-black fw-semibold  " href="/Careers.html">Careers</a>
         </li>
           <li class="nav-item mx-2">
-          <a class="nav-link text-black fw-semibold" href="contact.html">Contact</a>
+          <a class="nav-link text-black fw-semibold" href="/contact.html">Contact</a>
         </li>
      
        
@@ -575,7 +575,7 @@ Terms of Service</p>
     }
   });
 </script> -->
-
+<!-- 
 <script>
   const links = document.querySelectorAll('.nav-link');
   const currentPage = window.location.pathname.split("/").pop() || "index.html";
@@ -591,8 +591,30 @@ Terms of Service</p>
       link.classList.remove("active");
     }
   });
-</script>
+</script> -->
 
+<script>
+  const links = document.querySelectorAll('.nav-link');
+  const currentPath = window.location.pathname;
+
+  links.forEach(link => {
+    const href = link.getAttribute("href");
+
+    if (!href || href === "#") return;
+
+    // home
+    if (href === "/" && currentPath === "/") {
+      link.classList.add("active");
+    }
+    // باقي الصفحات
+    else if (href !== "/" && currentPath.startsWith(href)) {
+      link.classList.add("active");
+    }
+    else {
+      link.classList.remove("active");
+    }
+  });
+</script>
 
 
     <!-- ========== Bootstrap JS Link ========== -->
