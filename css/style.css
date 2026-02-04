@@ -240,10 +240,11 @@ width:50% !important;
     width: 45% !important;
 }
     .content-sec2-part2 .card{
-        width: 50% !important;
+        width: 71% !important;
         margin: auto !important;
         margin-top: 20px    !important;
         padding: 20px !important;
+        padding-left: 40px  !important;
         background-color: #E3EBF0 !important;
         
     }
@@ -267,9 +268,17 @@ width:50% !important;
     margin-bottom: 5px !important; */
     color: #000000 !important;
 }
-.content-sec2-part2  li{
+.content-sec2-part2  h3{
     font-family: 'Roboto', sans-serif !important;
-   
+    font-size: 35px !important;
+    font-weight: 700 !important;
+    /* margin-top: 20px !important;
+    margin-bottom: 5px !important; */
+    color: #000000 !important;
+}
+.content-sec2-part2  li, .content-sec2-part2  p{
+    font-family: 'Roboto', sans-serif !important;
+   font-size: 25px !important;
     /* margin-top: 20px !important;
     margin-bottom: 20px !important; */
     
@@ -492,7 +501,7 @@ color: #ffffff85 !important;
 }
 
 .parent-sec4{
-    background-color: #D2DEEB;
+    background-color: #D2DEEA;
     border-radius: 30px;
 }
 
@@ -546,6 +555,27 @@ margin-bottom: 30px;
    margin-bottom: 50px !important;
 }
 
+.team-about{
+    margin-top: 30px !important;
+}
+
+
+.team-header h2{
+    font-family: 'Roboto', sans-serif !important;
+    font-size: 50px !important;
+    font-weight: 800 !important;
+    /* margin-top: 20px !important;
+    margin-bottom: 5px !important; */
+    color: #000000 !important;
+}
+.team-header  {
+    margin: auto;
+    
+    
+    border-radius: 30px;
+    padding: 10px;
+    
+}
 
 
 /*&&&&& servises Style *****/
@@ -744,9 +774,13 @@ a:hover {
 
 
 
+.team-about img{
+    width: 86% !important;
+}
 
-
-
+.team-about{
+    margin-top: 100px !important;
+}
 
 
 
@@ -813,23 +847,62 @@ width:50% !important;
 }
 
 .team-about img{
-    width: 70% !important;
+    width: 90% !important;
 }
 
 
 
 
 
+.content-sec2-part2 h2{
+    font-family: 'Roboto', sans-serif !important;
+    font-size: 30px !important;
+    font-weight: 800;
+    /* margin-top: 20px !important;
+    margin-bottom: 5px !important; */
+    color: #000000 !important;
+}
+.content-sec2-part2  h3{
+    font-family: 'Roboto', sans-serif !important;
+    font-size: 25px !important;
+    font-weight: 700 !important;
+    /* margin-top: 20px !important;
+    margin-bottom: 5px !important; */
+    color: #000000 !important;
+}
+.content-sec2-part2  li, .content-sec2-part2  p{
+    font-family: 'Roboto', sans-serif !important;
+   font-size: 18px !important;
+    /* margin-top: 20px !important;
+    margin-bottom: 20px !important; */
+    
+    color: #4b4b4bb8 !important;
+}
+
+
+  .content-sec2-part2 .card{
+        width: 80% !important;
+        margin: auto !important;
+        margin-top: 20px    !important;
+        padding: 20px !important;
+          padding-left: 40px  !important;
+        background-color: #E3EBF0 !important;
+        
+    }
 
 
 
-
-
-
-
-
-
-
+.content-sec4{
+    margin-top: 150px !important;
+}
+.team-header  {
+    margin: auto;
+    
+    
+    border-radius: 30px;
+    padding: 10px;
+    
+}
 
 
 
@@ -961,6 +1034,58 @@ text-align: center;
 .team-about img{
     width: 70% !important;
 }
+.content-sec2-part2 h2{
+    font-family: 'Roboto', sans-serif !important;
+    font-size: 25px !important;
+    font-weight: 800;
+    /* margin-top: 20px !important;
+    margin-bottom: 5px !important; */
+    color: #000000 !important;
+}
+.content-sec2-part2  h3{
+    font-family: 'Roboto', sans-serif !important;
+    font-size: 21px !important;
+    font-weight: 700 !important;
+    /* margin-top: 20px !important;
+    margin-bottom: 5px !important; */
+    color: #000000 !important;
+}
+.content-sec2-part2  li, .content-sec2-part2  p{
+    font-family: 'Roboto', sans-serif !important;
+   font-size: 16px !important;
+    /* margin-top: 20px !important;
+    margin-bottom: 20px !important; */
+    
+    color: #4b4b4bb8 !important;
+}
+
+
+  .content-sec2-part2 .card{
+        width: 90% !important;
+        margin: auto !important;
+        margin-top: 20px    !important;
+        padding: 20px !important;
+          padding-left: 40px  !important;
+        background-color: #E3EBF0 !important;
+        
+    }
+
+.team-header  {
+    margin: auto;
+    
+    
+    border-radius: 30px;
+    padding: 10px;
+    
+}
+
+
+
+
+
+
+
+
 
 }
 
@@ -1207,6 +1332,74 @@ width: 90% !important;
 .team-about{
     width: 100% !important;
 }
+
+
+
+
+
+
+
+.content-sec2-part2 h2{
+    font-family: 'Roboto', sans-serif !important;
+    font-size: 25px !important;
+    font-weight: 800;
+    /* margin-top: 20px !important;
+    margin-bottom: 5px !important; */
+    color: #000000 !important;
+}
+.content-sec2-part2  h3{
+    font-family: 'Roboto', sans-serif !important;
+    font-size: 21px !important;
+    font-weight: 700 !important;
+    /* margin-top: 20px !important;
+    margin-bottom: 5px !important; */
+    color: #000000 !important;
+}
+.content-sec2-part2  li, .content-sec2-part2  p{
+    font-family: 'Roboto', sans-serif !important;
+   font-size: 16px !important;
+    /* margin-top: 20px !important;
+    margin-bottom: 20px !important; */
+    
+    color: #4b4b4bb8 !important;
+}
+
+
+  .content-sec2-part2 .card{
+        width: 90% !important;
+        margin: auto !important;
+        margin-top: 20px    !important;
+        padding: 20px !important;
+            padding-left: 40px  !important;
+        background-color: #E3EBF0 !important;
+        
+    }
+
+.team-header  {
+    margin: auto;
+    
+    
+    border-radius: 30px;
+    padding: 10px;
+    
+}   
+
+.team-header h2{
+margin: 0px !important;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 }
