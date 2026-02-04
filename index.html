@@ -558,7 +558,7 @@ Terms of Service</p>
 
 
 
-<script>
+<!-- <script>
   const links = document.querySelectorAll('.nav-link');
   const currentPath = window.location.pathname;
 
@@ -572,6 +572,27 @@ Terms of Service</p>
       link.classList.add('active');
     } else {
       link.classList.remove('active');
+    }
+  });
+</script> -->
+
+<script>
+  const links = document.querySelectorAll('.nav-link');
+  const currentPath = window.location.pathname.replace(/\/$/, "");
+
+  links.forEach(link => {
+    const href = link.getAttribute('href').replace(/\/$/, "");
+
+    if (href === "#") return;
+
+    if (href === "" && currentPath === "") {
+      link.classList.add("active");
+    } 
+    else if (href !== "" && currentPath === href) {
+      link.classList.add("active");
+    } 
+    else {
+      link.classList.remove("active");
     }
   });
 </script>
